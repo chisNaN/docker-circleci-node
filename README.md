@@ -1,10 +1,11 @@
 # docker-circleci-node
 
+### Build & push to docker hub
+
 ```sh
-FROM circleci/node:latest
-USER root
-RUN apt-get update && \
-    apt-get install -y python-pip python-dev && \
-    pip install awscli
-USER circleci
+docker build .
+docker login
+docker images
+docker tag <IMAGE ID> agreg0ire/circleci-node:first
+docker push agreg0ire/circleci-node
 ```
