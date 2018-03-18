@@ -1,6 +1,8 @@
 # docker-circleci-node
 
-### Build & push to docker hub
+>A circle-ci node official image including `aws-cli` installed with `PIP` for `s3` deploy
+
+### Process to build & push to docker hub
 
 ```sh
 docker build .
